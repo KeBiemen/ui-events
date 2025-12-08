@@ -106,13 +106,6 @@ a[href="#design"] {
 }
 }
 
-
-
-
-a[href="#and"] {}
-
-
-
 .translate{
    animation-name: --translate;
 	animation-duration:1s;
@@ -128,3 +121,23 @@ a[href="#and"] {}
 
 100% {translate: 0;}
 }
+
+
+a[href="#development"] {
+
+
+}
+
+.shake
+{ animation-name: --shake;
+	animation-duration:.5s;
+	animation-iteration-count:4;
+
+}
+
+@keyframes --shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); } }

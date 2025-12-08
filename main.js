@@ -41,7 +41,6 @@ frontendLink.addEventListener('click', scaleHandler)
 
 function scaleHandler () {
 frontendLink.classList.toggle('scale') }
-
 frontendLink.addEventListener('animationend', scaleHandler)
 
 
@@ -54,3 +53,14 @@ function translateHandler () {
 andLink.classList.toggle('translate') }
 
 andLink.addEventListener('animationend', translateHandler)
+
+
+let developmentLink = document.querySelector('a[href="#development"]')
+
+developmentLink.addEventListener("dblclick", shakeHandler)
+
+function shakeHandler (){
+  developmentLink.classList.toggle('shake') 
+}
+
+developmentLink.addEventListener('animationend', shakeHandler)
