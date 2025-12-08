@@ -94,12 +94,10 @@ a[href="#design"] {
 
 @keyframes --scale {
   0% {
-		scale:1;
-		
+		scale:1;	
   }
   50% {
-	scale:1.2;	
-		
+	scale:1.2;		
   }
   100% {
 		scale:1;
@@ -122,12 +120,6 @@ a[href="#design"] {
 100% {translate: 0;}
 }
 
-
-a[href="#development"] {
-
-
-}
-
 .shake
 { animation-name: --shake;
 	animation-duration:.5s;
@@ -141,3 +133,26 @@ a[href="#development"] {
   50% { transform: rotate(0eg); }
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); } }
+
+
+
+
+a[href="#sprint-5"] {
+
+
+
+}
+
+.kleur{
+  animation-name: --kleur;
+	animation-duration:.5s;
+	animation-iteration-count:4;
+}
+
+@keyframes --kleur {
+
+  0% { background-color: var(--highlight-secondary);}
+  25% {  background-color: rgb(113, 113, 165);}
+  50% {  background-color: rgb(226, 113, 113) }
+  75% {  background-color: rgb(81, 123, 81) }
+  100% {  background-color: var(--highlight-secondary); }}

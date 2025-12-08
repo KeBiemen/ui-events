@@ -62,5 +62,16 @@ developmentLink.addEventListener("dblclick", shakeHandler)
 function shakeHandler (){
   developmentLink.classList.toggle('shake') 
 }
-
 developmentLink.addEventListener('animationend', shakeHandler)
+
+
+let sprintLink = document.querySelector('a[href="#sprint-5"]')
+
+sprintLink.addEventListener("focus", colorHandler )
+
+function colorHandler (){
+sprintLink.classList.toggle('kleur') 
+
+}
+
+sprintLink.addEventListener('animationend', colorHandler)
