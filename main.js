@@ -33,7 +33,7 @@ let frontendLink = document.querySelector('a[href="#frontend"]')
 // scaleLink.addEventListener...
 
 
-frontendLink.addEventListener('click',scaleHandler)
+frontendLink.addEventListener('click', scaleHandler)
 
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
@@ -44,3 +44,13 @@ frontendLink.classList.toggle('scale') }
 
 frontendLink.addEventListener('animationend', scaleHandler)
 
+
+
+let andLink = document.querySelector('a[href="#and"]')
+
+andLink.addEventListener('click', translateHandler)
+
+function translateHandler () {
+andLink.classList.toggle('translate') }
+
+andLink.addEventListener('animationend', translateHandler)

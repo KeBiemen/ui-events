@@ -85,9 +85,6 @@ a[href="#design"] {
 
 /* Hieronder komen jouw animaties en stijlen */
 
-a[href="#frontend"] {}
-  
-
 
 .scale {
   animation-name: --scale;
@@ -107,4 +104,27 @@ a[href="#frontend"] {}
   100% {
 		scale:1;
 }
+}
+
+
+
+
+a[href="#and"] {}
+
+
+
+.translate{
+   animation-name: --translate;
+	animation-duration:1s;
+	animation-iteration-count:1;
+} 
+
+
+@keyframes --translate {
+
+0% {translate: 0;}
+
+50%  {translate: 1em;}
+
+100% {translate: 0;}
 }
