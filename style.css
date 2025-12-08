@@ -84,3 +84,27 @@ a[href="#design"] {
 
 
 /* Hieronder komen jouw animaties en stijlen */
+
+a[href="#frontend"] {}
+  
+
+
+.scale {
+  animation-name: --scale;
+	animation-duration:1s;
+	animation-iteration-count:2;
+}
+
+@keyframes --scale {
+  0% {
+		scale:1;
+		
+  }
+  50% {
+	scale:1.2;	
+		
+  }
+  100% {
+		scale:1;
+}
+}
