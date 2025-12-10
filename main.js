@@ -102,3 +102,17 @@ function rotatehandler () {
 theLink.classList.toggle('rotate') }
 
 theLink.addEventListener('animationend', rotatehandler)
+
+
+
+let flowLink =document.querySelector('a[href="#flow"]')
+
+flowLink.addEventListener("mousedown", flipDownHandler)
+flowLink.addEventListener("mouseup", flipUpHandler)
+
+function flipDownHandler() {
+  flowLink.classList.add("flip")
+}
+function flipUpHandler() {
+  flowLink.classList.remove("flip")
+}

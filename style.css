@@ -206,5 +206,23 @@ a[href="#fix"] {
 }
 
   
+a[href="#flow"] {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+
+  transition: .3s;
+
+  &.flip{
+    transform: rotateY(180deg);
+    transition: 1s;
+  }
+  
+}
+
+
+
+
 
 
