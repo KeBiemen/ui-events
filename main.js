@@ -80,7 +80,7 @@ sprintLink.addEventListener('animationend', colorHandler)
 let fixLink = document.querySelector('a[href="#fix"]')
 
 // Stap 2: addEventListener
-fixLink.addEventListener("mouseenter", fixEnterHandler)
+fixLink.addEventListener("mouseover", fixEnterHandler)
 fixLink.addEventListener("mouseleave", fixLeaveHandler)
 
 // Stap 3: classList (.toggle(), .add(), etc.)
@@ -91,3 +91,14 @@ function fixEnterHandler() {
 function fixLeaveHandler() {
   fixLink.innerText = "Fix"
 }
+
+
+
+let theLink = document.querySelector('a[href="#the"]')
+
+theLink.addEventListener("mouseover", rotatehandler)
+
+function rotatehandler () {
+theLink.classList.toggle('rotate') }
+
+theLink.addEventListener('animationend', rotatehandler)
