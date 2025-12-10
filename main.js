@@ -75,3 +75,19 @@ sprintLink.classList.toggle('kleur')
 }
 
 sprintLink.addEventListener('animationend', colorHandler)
+
+
+let fixLink = document.querySelector('a[href="#fix"]')
+
+// Stap 2: addEventListener
+fixLink.addEventListener("mouseenter", fixEnterHandler)
+fixLink.addEventListener("mouseleave", fixLeaveHandler)
+
+// Stap 3: classList (.toggle(), .add(), etc.)
+function fixEnterHandler() {
+  fixLink.innerText = "Break"
+}
+
+function fixLeaveHandler() {
+  fixLink.innerText = "Fix"
+}
