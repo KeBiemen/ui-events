@@ -96,7 +96,7 @@ function fixLeaveHandler() {
 
 let theLink = document.querySelector('a[href="#the"]')
 
-theLink.addEventListener("mouseover", rotatehandler)
+theLink.addEventListener("mouseout", rotatehandler)
 
 function rotatehandler () {
 theLink.classList.toggle('rotate') }
